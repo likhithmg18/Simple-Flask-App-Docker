@@ -12,3 +12,4 @@ python3 product_list_app.py
 // RUN in foreground 
 // While running it use "/products" at the end
 // Exposed port no is 5070
+// it is there in product_list_app.py inside that @app.route('/products/<int:id>', methods=['DELETE'], strict_slashes=False) here it is mentioned

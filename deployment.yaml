@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webstatic
+  name: flaskapp
   labels:
-    app: webstatic
+    app: flaskapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webstatic
+      app: flaskapp
   template:
     metadata:
       labels:
-        app: webstatic
+        app: flaskapp
     spec:
       containers:
-      - name: webstatic
+      - name: flaskapp
         image: amansanill/flaskapp:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5070

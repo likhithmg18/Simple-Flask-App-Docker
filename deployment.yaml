@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: flaskapp
-        image: amansanill/flaskapp:latest
+        image: likhith189/simple_flask:latest
         ports:
         - containerPort: 5070
